@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /*FOOTER styling_____________________________*/
 
  footer {
@@ -36,3 +37,307 @@
          grid-template-columns: 1fr 1fr;
          padding: 20px;
      }
+=======
+ h1 {
+     font-family: beloved-sans, sans-serif;
+     letter-spacing: 2px;
+     color: #FF9300;
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: 2rem;
+     text-align: center;
+     font-size: 2rem;
+ }
+
+ h2 {
+     font-family: beloved-sans, sans-serif;
+     letter-spacing: 3px;
+     color: #FF9300;
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: -7rem;
+     text-align: center;
+     font-size: 2rem;
+
+
+ }
+
+ h3 {
+     font-family: beloved-sans, sans-serif;
+     letter-spacing: 3px;
+     color: #FF9300;
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: 1rem;
+     text-align: center;
+     font-size: 2rem;
+
+ }
+
+ h4 {
+     font-family: beloved-sans, sans-serif;
+     letter-spacing: 2px;
+     color: #FF9300;
+     display: grid;
+     grid-template-columns: 1fr;
+     margin-top: 2rem;
+     text-align: center;
+     font-size: 1rem;
+ }
+
+ p {
+     font-family: basic-sans, sans-serif;
+     font-style: normal;
+     font-weight: 100;
+ }
+
+ body {
+     font-family: serif;
+ }
+
+ img {
+     width: 100%;
+     /*        man kan bruge object-fit til at få billederne til at gøre billederne lige store: */
+ }
+
+
+ hr {
+     display: block;
+     border: 0;
+     border-top: 8px dotted orange;
+     text-align: center;
+     margin-top: 2rem;
+ }
+
+ button {
+     font-family: beloved-sans, sans-serif;
+     font-weight: 200;
+     font-style: normal;
+     border: 1px lightgrey;
+     margin: 1rem;
+     color: black;
+     border: none;
+     font-size: 1rem;
+
+ }
+
+ button:hover {
+     color: orange;
+ }
+
+
+ .valgt {
+     color: orange;
+
+ }
+
+
+ #liste {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     grid-gap: 3em;
+     margin: 5em;
+ }
+
+ .ret {
+     padding: 1em;
+     overflow: hidden;
+     display: block;
+     font-family: sans-serif;
+     font-size: 1.2rem;
+     text-align: center;
+     margin-top: -5rem;
+
+ }
+
+ article {
+     text-align: center;
+ }
+
+
+ .billeder {
+     opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+
+ }
+
+ .container:hover .billeder {
+     opacity: 0.3;
+     transform: scale(1.1);
+
+ }
+
+ .container {
+     position: relative;
+ }
+
+ .text {
+     position: absolute;
+     bottom: 20px;
+     right: 20px;
+     background-color: rgba(0, 0, 0, 0.1);
+     color: white;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+
+ img {
+     max-width: 100%;
+
+ }
+
+ article img {
+     filter: grayscale(20%);
+     width: 25%;
+     height: 50px;
+     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+
+ }
+
+ main {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     gap: 5px;
+     width: 90vw;
+     max-width: 1280px;
+     margin: 0 auto;
+
+ }
+
+ .pris {
+     font-family: 'Playfair Display', serif;
+     padding: 0px 10px;
+     margin: 0;
+     font-size: 30px;
+     font-weight: 500;
+     color: orange;
+
+ }
+
+ .desktop_logo {
+     width: 50%;
+     margin: 0 25%;
+     display: block;
+     margin-bottom: 5px;
+ }
+
+ #velkommen {
+     padding: 40px 0px;
+     background-image: url(baggrund.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 320px !important;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .top img {
+     float: left;
+     width: 6%;
+     margin: 0 0 0 15px;
+     position: relative;
+     top: 10px;
+     left: 10px;
+ }
+
+ .top button {
+     float: right;
+     margin: 0 0 0 15px;
+     position: relative;
+     top: 10px;
+     right: 10px;
+ }
+
+
+ @media screen and (min-width: 550px) {
+
+     h1 {
+         font-family: beloved-sans, sans-serif;
+         letter-spacing: 5px;
+         color: #FF9300;
+         display: grid;
+         grid-template-columns: 1fr;
+         margin-top: 2rem;
+         text-align: center;
+         font-size: 4rem;
+     }
+
+     h2 {
+         font-family: beloved-script, sans-serif;
+         letter-spacing: 3px;
+         color: #FF9300;
+         display: grid;
+         grid-template-columns: 1fr;
+         margin-top: -7rem;
+         text-align: center;
+         font-size: 4rem;
+
+
+     }
+
+     .top img {
+         float: left;
+         width: 9%;
+         margin: 0 0 0 15px;
+         position: relative;
+         top: 10px;
+         left: 10px;
+     }
+
+     .top button {
+         float: right;
+         margin: 0 0 0 15px;
+         position: relative;
+         top: 35px;
+         right: 10px;
+     }
+
+     .desktop_logo {
+         width: 40%;
+         margin: 0 30%;
+         display: block;
+         margin-bottom: 5px;
+     }
+
+     button {
+         font-family: beloved-sans, sans-serif;
+         font-weight: 400;
+         font-style: normal;
+         border: 1px lightgrey;
+         margin: 1rem;
+         color: black;
+         border: none;
+         font-size: 1.5rem;
+
+     }
+
+     .top img {
+         float: left;
+         width: 4%;
+         margin: 0 0 0 15px;
+         position: relative;
+         top: 10px;
+         left: 10px;
+     }
+
+     .top button {
+         float: right;
+         margin: 0 0 0 15px;
+         position: relative;
+         top: 10px;
+         right: 10px;
+     }
+
+     .top .social_icon {
+         width: 3.5%;
+         top: 15px;
+         right: 10px;
+     }
+ }
+>>>>>>> Julie
