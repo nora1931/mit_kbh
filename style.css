@@ -1,3 +1,43 @@
+<<<<<<< HEAD
+ /*FOOTER styling_____________________________*/
+
+ footer {
+     border: 1px solid black;
+ }
+
+.adresse p {
+    line-height: 10px;
+}
+
+.kontakt p {
+        line-height: 10px;
+}
+
+
+ .some a {
+     text-align: center;
+     color: #e37777;
+     font-size: 18px;
+     text-decoration: none;
+ }
+
+ .facebook {
+     background: #ffffff;
+     color: white;
+ }
+
+ .instagram {
+     background: #ffffff;
+     color: white;
+ }
+
+ @media (min-width:650px) {
+     footer {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         padding: 20px;
+     }
+=======
  h1 {
      font-family: beloved-sans, sans-serif;
      letter-spacing: 2px;
@@ -300,3 +340,4 @@
          right: 10px;
      }
  }
+>>>>>>> Julie
