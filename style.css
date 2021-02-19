@@ -60,11 +60,6 @@
      /*        man kan bruge object-fit til at få billederne til at gøre billederne lige store: */
  }
 
- nav {
-     text-align: center;
-     margin-top: 1rem;
-
- }
 
  hr {
      display: block;
@@ -119,18 +114,6 @@
      text-align: center;
  }
 
- footer h5 {
-
-     font-family: beloved-sans, sans-serif;
-     letter-spacing: 2px;
-     color: #FF9300;
-     font-size: 1rem;
- }
-
- footer p {
-     font-family: beloved-sans, sans-serif;
-     font-size: 0.8rem;
- }
 
  .billeder {
      opacity: 1;
