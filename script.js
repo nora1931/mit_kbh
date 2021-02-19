@@ -33,6 +33,7 @@ function start() {
 
 //Eventlistner knyttet til knapperne der vælger hvad for et filter der er aktivt
 function filtrerAktiviter() {
+    console.log("filtrerAktiviter");
     filter = this.dataset.aktivitet; //Sæt verdien "filter" til værdien af data-troende på den knap der er klikket på
     document.querySelector(".valgt").classList.remove("valgt"); //fjern klassen valgt fra den knap
     this.classList.add("valgt") //marker den knap, der er klikket på
@@ -57,7 +58,7 @@ function visAktiviteter() {
     const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
     dest.textContent = ""; //ryd container inden nyt loop
     aktiviteter.forEach(aktivitet => {
-        console.log("Aktiviter", aktivitet.aktivitet);
+//        console.log("Aktiviter", aktivitet.aktivitet);
         // loop igennem json (retter)
 
         if (filter == aktivitet.aktivitet || filter == "alle") {
