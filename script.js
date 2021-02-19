@@ -1,3 +1,17 @@
+//definer en varibel der tager fat i menuen
+let mainNav = document.getElementById('js-menu');
+
+//definer en varibel der tager fat i toggle menuen (burger)
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+//når der klikke på toggle knappen toggles der mellem de to
+navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+})
+
+
+
+
 const header = document.querySelector("nav h3");
 const medieurl = "https://mitkbh-df3d.restdb.io/media/";
 const myHeaders = {

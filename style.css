@@ -1,342 +1,144 @@
- /*FOOTER styling_____________________________*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
- footer {
-     border: 1px solid black;
- }
+/*FOOTER styling_____________________________*/
+
+footer {
+    border: 1px solid black;
+}
 
 .adresse p {
     line-height: 10px;
 }
 
 .kontakt p {
-        line-height: 10px;
+    line-height: 10px;
 }
 
 
- .some a {
-     text-align: center;
-     color: #e37777;
-     font-size: 18px;
-     text-decoration: none;
- }
+.some a {
+    text-align: center;
+    color: #e37777;
+    font-size: 18px;
+    text-decoration: none;
+}
 
- .facebook {
-     background: #ffffff;
-     color: white;
- }
+.facebook {
+    background: #ffffff;
+    color: white;
+}
 
- .instagram {
-     background: #ffffff;
-     color: white;
- }
-
- @media (min-width:650px) {
-     footer {
-         display: grid;
-         grid-template-columns: 1fr 1fr;
-         padding: 20px;
-     }
-=======
- h1 {
-     font-family: beloved-sans, sans-serif;
-     letter-spacing: 2px;
-     color: #FF9300;
-     display: grid;
-     grid-template-columns: 1fr;
-     margin-top: 2rem;
-     text-align: center;
-     font-size: 2rem;
- }
-
- h2 {
-     font-family: beloved-sans, sans-serif;
-     letter-spacing: 3px;
-     color: #FF9300;
-     display: grid;
-     grid-template-columns: 1fr;
-     margin-top: -7rem;
-     text-align: center;
-     font-size: 2rem;
+.instagram {
+    background: #ffffff;
+    color: white;
+}
 
 
- }
 
- h3 {
-     font-family: beloved-sans, sans-serif;
-     letter-spacing: 3px;
-     color: #FF9300;
-     display: grid;
-     grid-template-columns: 1fr;
-     margin-top: 1rem;
-     text-align: center;
-     font-size: 2rem;
+body {
+    font-family: 'Josefine Sans', sans-serif;
+}
 
- }
+.splashimage {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
 
- h4 {
-     font-family: beloved-sans, sans-serif;
-     letter-spacing: 2px;
-     color: #FF9300;
-     display: grid;
-     grid-template-columns: 1fr;
-     margin-top: 2rem;
-     text-align: center;
-     font-size: 1rem;
- }
+/********* NAV BAR MOBIL *********/
 
- p {
-     font-family: basic-sans, sans-serif;
-     font-style: normal;
-     font-weight: 100;
- }
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid rgba (0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
 
- body {
-     font-family: serif;
- }
+/*skjul menu*/
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
 
- img {
-     width: 100%;
-     /*        man kan bruge object-fit til at få billederne til at gøre billederne lige store: */
- }
+.active {
+    display: block;
+}
 
+.nav-links,
+.log {
+    text-decoration: none;
+    color: black;
+}
 
- hr {
-     display: block;
-     border: 0;
-     border-top: 8px dotted orange;
-     text-align: center;
-     margin-top: 2rem;
- }
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
 
- button {
-     font-family: beloved-sans, sans-serif;
-     font-weight: 200;
-     font-style: normal;
-     border: 1px lightgrey;
-     margin: 1rem;
-     color: black;
-     border: none;
-     font-size: 1rem;
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
 
- }
+.navbar-toggle {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
 
- button:hover {
-     color: orange;
- }
+@media (min-width:650px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+    }
+}
 
+/********* NAV BAR DEKSTOP *********/
 
- .valgt {
-     color: orange;
+@media screen and (min-width: 768px) {
 
- }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        height: 100px;
+        align-items: center;
+    }
 
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 
- #liste {
-     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-     grid-gap: 3em;
-     margin: 5em;
- }
+    .main-nav li {
+        margin: 0;
+    }
 
- .ret {
-     padding: 1em;
-     overflow: hidden;
-     display: block;
-     font-family: sans-serif;
-     font-size: 1.2rem;
-     text-align: center;
-     margin-top: -5rem;
+    .nav-links {
+        margin-left: 40px;
+    }
 
- }
+    .logo {
+        margin-top: 20px;
+    }
 
- article {
-     text-align: center;
- }
+    .navbar-toggle {
+        display: none;
+    }
 
-
- .billeder {
-     opacity: 1;
-     display: block;
-     width: 100%;
-     height: auto;
-     transition: .5s ease;
-     backface-visibility: hidden;
-
- }
-
- .container:hover .billeder {
-     opacity: 0.3;
-     transform: scale(1.1);
-
- }
-
- .container {
-     position: relative;
- }
-
- .text {
-     position: absolute;
-     bottom: 20px;
-     right: 20px;
-     background-color: rgba(0, 0, 0, 0.1);
-     color: white;
-     padding-left: 20px;
-     padding-right: 20px;
- }
-
- img {
-     max-width: 100%;
-
- }
-
- article img {
-     filter: grayscale(20%);
-     width: 25%;
-     height: 50px;
-     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-
- }
-
- main {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 5px;
-     width: 90vw;
-     max-width: 1280px;
-     margin: 0 auto;
-
- }
-
- .pris {
-     font-family: 'Playfair Display', serif;
-     padding: 0px 10px;
-     margin: 0;
-     font-size: 30px;
-     font-weight: 500;
-     color: orange;
-
- }
-
- .desktop_logo {
-     width: 50%;
-     margin: 0 25%;
-     display: block;
-     margin-bottom: 5px;
- }
-
- #velkommen {
-     padding: 40px 0px;
-     background-image: url(baggrund.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 320px !important;
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
-
- .top img {
-     float: left;
-     width: 6%;
-     margin: 0 0 0 15px;
-     position: relative;
-     top: 10px;
-     left: 10px;
- }
-
- .top button {
-     float: right;
-     margin: 0 0 0 15px;
-     position: relative;
-     top: 10px;
-     right: 10px;
- }
-
-
- @media screen and (min-width: 550px) {
-
-     h1 {
-         font-family: beloved-sans, sans-serif;
-         letter-spacing: 5px;
-         color: #FF9300;
-         display: grid;
-         grid-template-columns: 1fr;
-         margin-top: 2rem;
-         text-align: center;
-         font-size: 4rem;
-     }
-
-     h2 {
-         font-family: beloved-script, sans-serif;
-         letter-spacing: 3px;
-         color: #FF9300;
-         display: grid;
-         grid-template-columns: 1fr;
-         margin-top: -7rem;
-         text-align: center;
-         font-size: 4rem;
-
-
-     }
-
-     .top img {
-         float: left;
-         width: 9%;
-         margin: 0 0 0 15px;
-         position: relative;
-         top: 10px;
-         left: 10px;
-     }
-
-     .top button {
-         float: right;
-         margin: 0 0 0 15px;
-         position: relative;
-         top: 35px;
-         right: 10px;
-     }
-
-     .desktop_logo {
-         width: 40%;
-         margin: 0 30%;
-         display: block;
-         margin-bottom: 5px;
-     }
-
-     button {
-         font-family: beloved-sans, sans-serif;
-         font-weight: 400;
-         font-style: normal;
-         border: 1px lightgrey;
-         margin: 1rem;
-         color: black;
-         border: none;
-         font-size: 1.5rem;
-
-     }
-
-     .top img {
-         float: left;
-         width: 4%;
-         margin: 0 0 0 15px;
-         position: relative;
-         top: 10px;
-         left: 10px;
-     }
-
-     .top button {
-         float: right;
-         margin: 0 0 0 15px;
-         position: relative;
-         top: 10px;
-         right: 10px;
-     }
-
-     .top .social_icon {
-         width: 3.5%;
-         top: 15px;
-         right: 10px;
-     }
- }
->>>>>>> Julie
+    .logo:hover,
+    .nav-links:hover {
+        color: aliceblue;
+    }
+}
