@@ -8,39 +8,6 @@
     background-color: red;
 }
 
-/*FOOTER styling_____________________________*/
-
-footer {
-    border: 1px solid black;
-}
-
-.adresse p {
-    line-height: 10px;
-}
-
-.kontakt p {
-    line-height: 10px;
-}
-
-
-.some a {
-    text-align: center;
-    color: #e37777;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.facebook {
-    background: #ffffff;
-    color: white;
-}
-
-.instagram {
-    background: #ffffff;
-    color: white;
-}
-
-
 
 body {
     font-family: 'Josefine Sans', sans-serif;
@@ -97,6 +64,7 @@ body {
     color: black;
     font-size: 24px;
 }
+
 
 
 /********* STYLE AF MAIN *********/
@@ -206,16 +174,50 @@ article {
 
 }
 
+/******** FOOTER *********/
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer_container {
+    text-align: center;
+    background-color: #82976F;
+}
+
+li {
+    list-style: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.some .fab fa-facebook .fab fa-instagram .fab fa-tiktok {
+    word-spacing: 20px;
+}
+
+.footer h3 {
+    padding-top: 25px;
+}
+
 
 
 
 @media (min-width:650px) {
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 20px;
+    .footer_flex {
+        display: flex;
+        justify-content: space-around;
     }
 }
+
+
 
 /********* NAV BAR DEKSTOP *********/
 
