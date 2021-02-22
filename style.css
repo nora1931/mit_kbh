@@ -4,6 +4,44 @@
     margin: 0;
 }
 
+/*POP UP VINDUET*/
+
+.hide {
+    visibility: hidden;
+}
+
+.pop_up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: #d0a886;
+    padding: 20px 40px;
+    z-index: 99;
+}
+
+.popup_content h2 {
+    font-family: beloved-sans, sans-serif;
+}
+
+.popup_content p {
+    line-height: 140%;
+    padding-top: 15px;
+    font-family: Charter, sans-serif;
+}
+
+.tilbage {
+    font-size: 3.5em;
+    color: #574e32;
+    float: right;
+    cursor: pointer;
+
+}
+
+/*_____________________________*/
+
 .valgt {
     background-color: #253b19;
 }
