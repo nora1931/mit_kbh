@@ -66,10 +66,21 @@ function visAktiviteter() {
             //                    klon.querySelector(".ikon").textContent += `${aktivitet.pris} kr`;
             klon.querySelector(".billeder").src = medieurl + aktivitet.billede;
             //                    klon.querySelector(".aktivitet").addEventListener("click", () => visDetaljer(aktivitet));
+
+            klon.querySelector(".aktivitet").addEventListener("click", popup_vindue);
+
+
             dest.appendChild(klon);
         }
 
+
     })
+
+}
+
+function popup_vindue(prut) {
+    console.log("popup_vindue");
+
 }
 
 

@@ -4,6 +4,19 @@
     margin: 0;
 }
 
+.hide {
+/*    position: absolute;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #d9bebe;
+/*    visibility: hidden;*/
+
+}
+
 /*FOOTER styling_____________________________*/
 
 footer {
