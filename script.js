@@ -67,10 +67,39 @@ function visAktiviteter() {
             //                    klon.querySelector(".ikon").textContent += `${aktivitet.pris} kr`;
             klon.querySelector(".billeder").src = medieurl + aktivitet.billede;
             //                    klon.querySelector(".aktivitet").addEventListener("click", () => visDetaljer(aktivitet));
+
+            klon.querySelector(".aktivitet").addEventListener("click", () => {
+                popup_vindue(aktivitet);
+            })
+
+
             dest.appendChild(klon);
         }
 
+
     })
+
+}
+
+function popup_vindue(indhold) {
+    document.querySelector(".pop_up").classList.remove("hide");
+    document.querySelector("[popup_langbeskrivelse]").textContent = indhold.langtekst;
+    document.querySelector("[popup_overskrift]").textContent = indhold.aktivitet;
+    document.querySelector("[data-popupimg]").src = medieurl + indhold.billede;
+
+
+
+
+    document.querySelector(".tilbage").addEventListener("click", fjernPOPUP);
+
+    console.log("test1", indhold.aktivitet);
+    console.log("test2", indhold.billede);
+    console.log("test3", indhold.langtekst);
+}
+
+function fjernPOPUP() {
+    console.log("fjern pop up");
+    document.querySelector(".pop_up").classList.add("hide");
 }
 
 

@@ -4,8 +4,62 @@
     margin: 0;
 }
 
+<<<<<<< HEAD
 .valgt {
     background-color: red;
+=======
+.hide {
+    visibility: hidden;
+}
+
+.pop_up {
+     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    background-color: #d9bebe;
+    padding: 20px 40px;
+}
+
+.popup_content p {
+    line-height: 140%;
+    padding-top: 15px;
+}
+
+
+/*FOOTER styling_____________________________*/
+
+footer {
+    border: 1px solid black;
+}
+
+.adresse p {
+    line-height: 10px;
+}
+
+.kontakt p {
+    line-height: 10px;
+}
+
+
+.some a {
+    text-align: center;
+    color: #e37777;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.facebook {
+    background: #ffffff;
+    color: white;
+}
+
+.instagram {
+    background: #ffffff;
+    color: white;
+>>>>>>> nora2
 }
 
 
