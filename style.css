@@ -1,1 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
+.valgt {
+    background-color: #253b19;
+}
+
+
+body {
+    font-family: 'Josefine Sans', sans-serif;
+}
+
+.splashimage {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/********* NAV BAR MOBIL *********/
+
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid rgba (0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+/*skjul menu*/
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nav-links,
+.log {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+
+
+/********* STYLE AF MAIN *********/
+
+
+
+h1 {
+    font-family: beloved-sans, sans-serif;
+    letter-spacing: 5px;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: -5vw;
+}
+
+nav h3 {
+    font-family: Charter, sans-serif;
+    font-size: 1.6rem;
+    margin-top: 8vw;
+    margin-bottom: -10vw;
+
+}
+
+h4 {
+    font-family: beloved-sans, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+p {
+    font-family: Charter, serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 5vw;
+    padding: 7vw;
+}
+
+
+nav,
+button {
+    text-align: center;
+    font-family: Charter, serif;
+    font-weight: 200;
+    font-style: normal;
+    border: 5px;
+    margin: 0.5rem;
+    color: black;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    background-color: #82976f;
+    color: white;
+}
+
+button:hover {
+    background-color: #253b19;
+}
+
+
+
+
+.container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3em;
+    margin: 5em;
+}
+
+
+
+.aktivitet {
+    border: 1px solid #D0A886;
+    padding: 1em;
+    overflow: hidden;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+
+.billeder {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.container:hover .billeder {
+    opacity: 0.3;
+    transform: scale(1.1);
+
+}
+
+.container {
+    position: relative;
+}
+
+
+
+article {
+    text-align: center;
+
+}
+
+/**************** TABLET **************/
+@media (min-width:600px) {
+
+    p {
+        line-height: 4vw;
+
+    }
+
+    nav h3 {
+        margin-top: 3vw;
+        margin-bottom: 0vw;
+    }
+}
+
+/*************** DESKTOP *************/
+@media (min-width:900px) {
+    p {
+        line-height: 3vw;
+
+    }
+
+    nav h3 {
+        margin-top: 3vw;
+        margin-bottom: -3vw;
+    }
+}
+
+
+/******** FOOTER *********/
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer_container {
+    text-align: center;
+    background-color: #82976F;
+}
+
+li {
+    list-style: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+.some .fab fa-facebook .fab fa-instagram .fab fa-tiktok {
+    word-spacing: 20px;
+}
+
+.footer h3 {
+    padding-top: 25px;
+}
+
+
+
+
+@media (min-width:650px) {
+    .footer_flex {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+/********* NAV BAR DEKSTOP *********/
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        height: 100px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: aliceblue;
+    }
+}
