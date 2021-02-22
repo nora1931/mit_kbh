@@ -84,9 +84,17 @@ function popup_vindue(indhold) {
     document.querySelector(".pop_up").classList.remove("hide");
     document.querySelector("[popup_langbeskrivelse]").textContent = indhold.langtekst;
     document.querySelector("[popup_overskrift]").textContent = indhold.aktivitet;
+
+    document.querySelector(".tilbage").addEventListener("click", fjernPOPUP);
+
     console.log("test1", indhold.aktivitet);
     console.log("test2", indhold.billede);
     console.log("test3", indhold.langtekst);
+}
+
+function fjernPOPUP() {
+    console.log("fjern pop up");
+    document.querySelector(".pop_up").classList.add("hide");
 }
 
 
