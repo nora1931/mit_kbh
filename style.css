@@ -98,6 +98,117 @@ body {
     font-size: 24px;
 }
 
+
+/********* STYLE AF MAIN *********/
+
+
+
+h1 {
+    font-family: beloved-sans, sans-serif;
+    letter-spacing: 5px;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: Charter, sans-serif;
+}
+
+h4 {
+    font-family: beloved-sans, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+
+p {
+    font-family: Charter, serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+
+nav,
+button {
+    text-align: center;
+    font-family: Charter, serif;
+    font-weight: 200;
+    font-style: normal;
+    border: 5px;
+    margin: 0.5rem;
+    color: black;
+    font-size: 1rem;
+}
+
+button:hover {
+    color: orange;
+}
+
+
+
+
+.container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 3em;
+    margin: 5em;
+}
+
+
+
+.aktivitet {
+    border: 1px solid #D0A886;
+    padding: 1em;
+    overflow: hidden;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 0 auto;
+}
+
+.billeder {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.container:hover .billeder {
+    opacity: 0.3;
+    transform: scale(1.1);
+
+}
+
+.container {
+    position: relative;
+}
+
+
+
+article {
+    text-align: center;
+
+}
+
+
+
+
 @media (min-width:650px) {
     footer {
         display: grid;
