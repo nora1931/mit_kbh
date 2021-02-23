@@ -85,6 +85,8 @@ function popup_vindue(indhold) {
     document.querySelector("[popup_ikon]").src = medieurl + indhold.ikoner;
     document.querySelector("[data-popupimg]").src = medieurl + indhold.billede;
 
+    document.querySelector("iframe").src = `https://maps.google.com/maps?q=${indhold.adresse}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+
 
 
     document.querySelector(".tilbage").addEventListener("click", fjernPOPUP);
@@ -97,6 +99,8 @@ function popup_vindue(indhold) {
 function fjernPOPUP() {
     console.log("fjern pop up");
     document.querySelector(".pop_up").classList.add("hide");
+
+
 }
 
 
