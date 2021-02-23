@@ -9,34 +9,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/bmz6sqo.css">
     <link rel="stylesheet" href="https://use.typekit.net/bmz6sqo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontakt.css">
     <script src="https://kit.fontawesome.com/b5c01ee229.js" crossorigin="anonymous"></script>
-
-
 </head>
 
-
 <body>
-
-    <div class="pop_up hide">
-        <div class="popup_content">
-            <i class="fas fa-times tilbage"></i>
-            <!--            <img src="img/kryds.svg" class="tilbage">-->
-            <img src="" alt="" class="single_img" data-popupimg>
-            <div class="popup_tekst">
-                <h2 popup_overskrift></h2>
-                <p popup_langbeskrivelse></p>
-            </div>
-        </div>
-
-    </div>
 
     <header>
         <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fas fa-bars"></i>
             </span>
-            <a href="index.html" class="logo"> <img src="img/logo_brun.svg" alt="logo" width="100" height="100"></a>
+            <a href="index.html" class="logo"><img src="img/logo_brun.svg" alt="logo" width="100" height="100"></a>
             <ul class="main-nav" id="js-menu">
                 <li>
                     <a href="index.html" class="nav-links">Home</a>
@@ -51,42 +35,25 @@
         </nav>
     </header>
 
-    <div class="splashimage_container">
-        <img class="splashimage" src="img/splashimage.jpg" alt="nyhavn">
+    <div class="kontakt_formular">
+
+        <h1>Kontakt os</h1>
+
+        <!--        <h2>Vi vil så gerne høre fra dig</h2>-->
+
+        <div class="border"></div>
+
+        <form class="kontakt-form" action="index.html" method="post">
+            <input type="text" class="kontakt-form-tekst" placeholder="Dit Navn">
+            <input type="text" class="kontakt-form-tekst" placeholder="Din Email">
+            <input type="text" class="kontakt-form-tekst" placeholder="Dit Telefonummer">
+            <textarea class="kontakt-form-tekst" rows="5" cols="23" placeholder="Din besked"></textarea>
+            <input type="submit" class="send_knap" value="Send">
+        </form>
     </div>
 
-    <main>
-        <h1>VELKOMMEN</h1>
-
-        <p class="velkommentekst">Udover at være Danmarks hovedstad, byder København også på en masse spændende aktiviteter, som man kan udforske ligegyldigt hvilken alar. København er internationalt kendt som en gastronomisk destination, som mange sætter kurs mod for at opleve alt fra de skønne grønne naturområder, til de mange fysiske aktiviteter.</p>
-
-        <nav>
-            <button data-aktivitet="alle" class="valgt">Alle aktiviteter</button>
-            <button data-aktivitet="Spa & Wellness">Spa & Wellness</button>
-            <button data-aktivitet="Fysisk aktivitet">Fysisk aktivitet</button>
-            <button data-aktivitet="Naturområder">Naturområder</button>
-            <button data-aktivitet="Turistattraktioner">Turistattraktioner</button>
-            <h3>Alle aktiviteter</h3>
-        </nav>
-        <!--    <hr style="width:95%">-->
 
 
-
-        <section id="liste"></section>
-        <main>
-            <template>
-                <article class="aktivitet">
-                    <div class="container">
-                        <img src="" alt="" class="billeder">
-                    </div>
-                    <h4 class="seværdighed"></h4>
-
-                    <!--                <p class="ikon"></p>-->
-
-                </article>
-            </template>
-        </main>
-    </main>
     <footer class=" footer">
         <div class="footer_container">
             <div class="footer_flex">
@@ -116,9 +83,4 @@
             </div>
         </div>
     </footer>
-
-
-    <script src="script.js"></script>
 </body>
-
-</html>

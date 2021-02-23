@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+main {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 /*POP UP VINDUET*/
 
 .hide {
@@ -135,7 +140,7 @@ h4 {
 }
 
 
-p {
+.velkommentekst p {
     font-family: Charter, serif;
     font-style: normal;
     font-weight: 100;
@@ -254,11 +259,17 @@ article {
 
 /******** FOOTER *********/
 
+.footer {
+    color: white;
+}
+
 .footer h3 {
     margin-top: 0;
     margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: beloved-sans, sans-serif;
+    padding-top: 25px;
+    text-align: center;
 }
 
 .footer_container {
@@ -266,32 +277,46 @@ article {
     background-color: #82976F;
 }
 
-li {
+.footer li {
     list-style: none;
     line-height: 20px;
     padding-bottom: 10px;
     text-decoration: none;
+    font-family: Charter, serif;
 }
 
 .copyright {
     margin-top: 20px;
 }
 
-.some .fab fa-facebook .fab fa-instagram .fab fa-tiktok {
-    word-spacing: 20px;
+.fa-facebook,
+.fa-instagram,
+.fa-tiktok {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
 }
 
-.footer h3 {
-    padding-top: 25px;
+.copyright_container {
+    background-color: #253b19;
 }
-
-
 
 
 @media (min-width:650px) {
     .footer_flex {
         display: flex;
         justify-content: space-around;
+    }
+
+    .footer h3 {
+        text-align: left;
+    }
+
+    .fa-facebook,
+    .fa-instagram,
+    .fa-tiktok {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 

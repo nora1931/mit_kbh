@@ -1,0 +1,239 @@
+/********* NAV BAR MOBIL *********/
+
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid rgba (0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+/*skjul menu*/
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nav-links,
+.log {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+
+/*********** KONTAKT SEKTION ************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.kontakt_formular {
+    background: url(img/splashimageblurred.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0 0 40px 0;
+    overflow-x: hidden;
+}
+
+
+.kontakt_formular h1 {
+    text-align: center;
+    color: black;
+    filter: none;
+    width: 100%;
+    /*    background-color: #82976f;*/
+    padding-top: 30px;
+    margin-bottom: 60px;
+    font-family: beloved-sans, sans-serif;
+}
+
+/*
+.kontakt_formular h2 {
+    text-align: center;
+    font-family: beloved-sans, sans-serif;
+}
+*/
+
+.border {
+    width: 100px;
+    height: 4px;
+    background: black;
+    margin: 40px auto;
+}
+
+.kontakt-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.kontakt-form-tekst {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    padding: 20px 40px;
+    outline: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.kontakt-form-tekst:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.kontakt-form-tekst {
+    resize: none;
+    height: 120px;
+}
+
+.send_knap {
+    float: right;
+    border: 0;
+    background-color: black;
+    color: #fff;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.send_knap:hover {
+    background: #253B19;
+}
+
+/******** FOOTER *********/
+
+.footer {
+    color: white;
+}
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-family: beloved-sans, sans-serif;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.footer_container {
+    text-align: center;
+    background-color: #82976F;
+    padding-top: 5px;
+}
+
+.footer li {
+    list-style: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: Charter, serif;
+}
+
+.copyright {
+    margin-top: 40px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-tiktok {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+.copyright_container {
+    background-color: #253b19;
+}
+
+
+@media (min-width:650px) {
+    .footer_flex {
+        display: flex;
+        justify-content: space-around;
+        /*
+        padding-top: 10px;
+        padding-bottom: 10px;
+*/
+    }
+
+    .footer h3 {
+        text-align: left;
+    }
+
+    .fa-facebook,
+    .fa-instagram,
+    .fa-tiktok {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+
+/********* NAV BAR DEKSTOP *********/
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 90px;
+        align-items: center;
+        font-family: beloved-sans, sans-serif;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+
+    .main-nav li {
+        margin: 20px;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: #82976f;
+    }
+}
