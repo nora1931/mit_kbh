@@ -24,12 +24,18 @@
 
 .popup_content h2 {
     font-family: beloved-sans, sans-serif;
+    color: white;
+    padding-left: 50px;
 }
 
 .popup_content p {
-    line-height: 140%;
+    line-height: 150%;
     padding-top: 1px;
     font-family: Charter, sans-serif;
+    font-size: 0.93em;
+    color: white;
+        padding-left: 50px;
+
 }
 
 .tilbage {
@@ -51,7 +57,7 @@
 }
 
 .popupikon {
-    width: 90px;
+    width: 85px;
     position: absolute;
     bottom: 5px;
     left: 5px;
