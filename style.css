@@ -120,10 +120,8 @@ h1 {
     color: #000000;
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 2rem;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: -5vw;
 }
 
 nav h3 {
@@ -140,12 +138,13 @@ h4 {
 }
 
 
-.velkommentekst p {
+.velkommentekst {
     font-family: Charter, serif;
     font-style: normal;
     font-weight: 100;
-    line-height: 5vw;
-    padding: 7vw;
+    line-height: vw;
+    padding: 3vw;
+
 }
 
 
@@ -232,9 +231,9 @@ article {
 /**************** TABLET **************/
 @media (min-width:600px) {
 
-    p {
+    .velkommentekst {
         line-height: 4vw;
-
+        padding: 2vw;
     }
 
     nav h3 {
@@ -244,9 +243,11 @@ article {
 }
 
 /*************** DESKTOP *************/
-@media (min-width:900px) {
-    p {
+@media (min-width:1000px) {
+    .velkommentekst {
         line-height: 3vw;
+        margin-bottom: -4vw;
+        padding: 1vw;
 
     }
 
@@ -254,8 +255,11 @@ article {
         margin-top: 3vw;
         margin-bottom: -3vw;
     }
-}
 
+    nav button {
+        margin-top: 3vw;
+    }
+}
 
 /******** FOOTER *********/
 
