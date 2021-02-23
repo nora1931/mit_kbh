@@ -82,8 +82,8 @@ function popup_vindue(indhold) {
     document.querySelector(".pop_up").classList.remove("hide");
     document.querySelector("[popup_langbeskrivelse]").textContent = indhold.langtekst;
     document.querySelector("[popup_overskrift]").textContent = indhold.aktivitet;
-//    document.querySelector("[data-popupimg]").src = medieurl + indhold.billede;
-
+    document.querySelector("[popup_ikon]").src = medieurl + indhold.ikoner;
+    document.querySelector("[data-popupimg]").src = medieurl + indhold.billede;
 
 
 

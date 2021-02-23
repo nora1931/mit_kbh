@@ -21,28 +21,52 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 90%;
+    height: 95%;
     background-color: #d0a886;
-    padding: 20px 40px;
+    padding: 10px 10px;
     z-index: 99;
 }
 
 .popup_content h2 {
     font-family: beloved-sans, sans-serif;
+    color: white;
+    padding-left: 26px;
 }
 
 .popup_content p {
-    line-height: 140%;
-    padding-top: 15px;
+    line-height: 150%;
+    padding-top: 1px;
     font-family: Charter, sans-serif;
+    font-size: 0.93em;
+    color: white;
+    padding-left: 26px;
+    padding-right: 27px;
+
 }
 
 .tilbage {
-    font-size: 3.5em;
+    font-size: 2em;
     color: #574e32;
     float: right;
+    margin-right: 5px;
     cursor: pointer;
+}
 
+.single_img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+}
+
+.popupikon {
+    width: 85px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
 }
 
 /*_____________________________*/
