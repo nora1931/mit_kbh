@@ -16,7 +16,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 90%;
+    height: 95%;
     background-color: #d0a886;
     padding: 20px 40px;
     z-index: 99;
@@ -33,11 +33,26 @@
 }
 
 .tilbage {
-    font-size: 3.5em;
+    font-size: 2em;
     color: #574e32;
     float: right;
     cursor: pointer;
+}
 
+.single_img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 35px 10px 15px 10px;
+
+}
+
+.popupikon {
+    width: 90px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 /*_____________________________*/
