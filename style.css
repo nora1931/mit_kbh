@@ -21,17 +21,25 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 95%;
+    height: 98%;
     background-color: #d0a886;
     padding: 10px 10px;
     z-index: 99;
     overflow: scroll;
 }
 
+.popup_tekst {
+    margin: 0px 45px 0px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 20px 70px 0 -165px;
+    padding-top: 25px;
+}
+
 .popup_content h2 {
     font-family: beloved-sans, sans-serif;
     color: white;
-    margin-left: 45px;
 }
 
 .popup_content p {
@@ -40,9 +48,6 @@ main {
     font-family: Charter, sans-serif;
     font-size: 0.93em;
     color: white;
-    margin-left: 45px;
-    padding-right: 27px;
-
 }
 
 
@@ -52,63 +57,78 @@ main {
     float: right;
     margin-right: 5px;
     cursor: pointer;
+    margin-top: -7vh;
 }
 
 .single_img {
     object-fit: cover;
     width: 330px;
     height: 330px;
-    margin-top: 30px;
-    margin-left: 45px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px
 }
 
-.google {
-    margin-top: 20px;
-    margin-left: 45px;
-}
 
 iframe {
     width: 330px;
     height: 330px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 275px;
 }
+
 
 .popupikon {
     width: 85px;
     position: absolute;
-    bottom: -310px;
+    bottom: -370px;
     left: 6px;
 }
 
-@media (min-width:670px) {
+@media (min-width:700px) {
     .single_img {
         object-fit: cover;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         position: absolute;
-        left: 0px;
+        left: 30px;
         top: 30px;
-
     }
 
     .popupikon {
         width: 85px;
         position: absolute;
-        bottom: -95px;
+        bottom: -85px;
         left: 6px;
     }
 
     .google {
-        position: absolute;
-        bottom: -100px;
-        right: 30px;
+        overflow: hidden;
+        padding-bottom: 75%;
+        position: relative;
+        height: 0;
+        /*
+        bottom: 0px;
+        right: 35px;
+*/
     }
 
     iframe {
-        width: 750px;
-        height: 200px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        right: 0px;
-        bottom: 90px;
+    }
+
+    .popup_tekst {
+        position: absolute;
+        top: 22px;
+        left: 535px;
+
     }
 
     .popup_content p {
@@ -117,11 +137,6 @@ iframe {
         font-family: Charter, sans-serif;
         font-size: 0.93em;
         color: white;
-        margin-left: 0px;
-        padding-right: 40px;
-        position: absolute;
-        top: 100px;
-        left: 500px;
 
     }
 
@@ -129,9 +144,6 @@ iframe {
         font-family: beloved-sans, sans-serif;
         color: white;
         margin-left: 0px;
-        position: absolute;
-        top: 50px;
-        left: 500px;
     }
 
     .pop_up {
