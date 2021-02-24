@@ -149,7 +149,7 @@ h1 {
 }
 
 nav h3 {
-    font-family: Charter, sans-serif;
+    font-family: Avenir, sans-serif;
     font-size: 1.6rem;
     margin-top: 8vw;
     margin-bottom: -10vw;
@@ -163,7 +163,7 @@ h4 {
 
 
 .velkommentekst {
-    font-family: Charter, serif;
+    font-family: Avenir, thin;
     font-style: normal;
     font-weight: 100;
     line-height: 5vw;
@@ -171,11 +171,10 @@ h4 {
 
 }
 
-
 nav,
 button {
     text-align: center;
-    font-family: Charter, serif;
+    font-family: Avenir, serif;
     font-weight: 200;
     font-style: normal;
     border: 5px;
