@@ -1,50 +1,3 @@
-/********* NAV BAR MOBIL *********/
-
-.navbar {
-    font-size: 18px;
-    background-image: white;
-    border: 1px solid rgba (0, 0, 0, 0.2);
-    padding-bottom: 10px;
-}
-
-/*skjul menu*/
-.main-nav {
-    list-style-type: none;
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
-.nav-links,
-.log {
-    text-decoration: none;
-    color: black;
-}
-
-.main-nav li {
-    text-align: center;
-    margin: 15px auto;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-
-.navbar-toggle {
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    cursor: pointer;
-    color: black;
-    font-size: 24px;
-}
-
-
 /*********** KONTAKT SEKTION ************/
 * {
     padding: 0;
@@ -53,9 +6,8 @@
 }
 
 
-
 .kontakt_formular {
-    background: url(img/splashimageblurred.jpg) no-repeat center;
+    background: url(img/koebenhavnblurred.jpg) no-repeat center;
     background-size: cover;
     padding: 0 0 40px 0;
     overflow-x: hidden;
@@ -105,7 +57,7 @@
 }
 
 .kontakt-form-tekst:focus {
-    box-shadow: 0 0 10px 4px #34495e;
+    box-shadow: 0 0 10px 4px #ffff;
 }
 
 textarea.kontakt-form-tekst {
@@ -113,10 +65,14 @@ textarea.kontakt-form-tekst {
     height: 120px;
 }
 
+.send_knap_container {
+    padding-bottom: 90px;
+}
+
 .send_knap {
     float: right;
     border: 0;
-    background-color: black;
+    background-color: #82976F;
     color: #fff;
     padding: 12px 50px;
     cursor: pointer;
@@ -126,6 +82,57 @@ textarea.kontakt-form-tekst {
 .send_knap:hover {
     background: #253B19;
 }
+
+
+
+/********* NAV BAR MOBIL *********/
+
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid rgba (0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    font-family: beloved-sans, sans-serif;
+}
+
+/*skjul menu*/
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nav-links,
+.log {
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+
 
 /******** FOOTER *********/
 
@@ -153,7 +160,7 @@ textarea.kontakt-form-tekst {
     line-height: 20px;
     padding-bottom: 10px;
     text-decoration: none;
-    font-family: Charter, serif;
+    font-family: font-family: Avenir, sans-serif;
 }
 
 .copyright {

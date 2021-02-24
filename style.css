@@ -5,7 +5,7 @@
 }
 
 main {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -93,6 +93,7 @@ body {
     background-image: white;
     border: 1px solid rgba (0, 0, 0, 0.2);
     padding-bottom: 10px;
+    font-family: beloved-sans, sans-serif;
 }
 
 /*skjul menu*/
@@ -138,7 +139,7 @@ body {
 
 
 
-h1 {
+.velkommenh1_container .velkommenh1 {
     font-family: beloved-sans, sans-serif;
     letter-spacing: 5px;
     color: #000000;
@@ -146,11 +147,18 @@ h1 {
     grid-template-columns: 1fr;
     text-align: center;
     font-size: 2rem;
+    padding-top: 30px;
+    padding: 10px;
+}
+
+.velkommenh1_container {
+    padding-top: 5vh;
 }
 
 nav h3 {
     font-family: Avenir, sans-serif;
     font-size: 1.6rem;
+    font-weight: 400;
     margin-top: 8vw;
     margin-bottom: -10vw;
 
@@ -167,9 +175,9 @@ h4 {
     font-style: normal;
     font-weight: 100;
     line-height: 5vw;
-    padding: 3vw;
-
+    padding: 7vw;
 }
+
 
 nav,
 button {
@@ -194,8 +202,6 @@ button:hover {
 }
 
 
-
-
 .container img {
     width: 300px;
     height: 300px;
@@ -209,9 +215,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 3em;
-    margin: 5em;
+    padding: 5em;
 }
-
 
 
 .aktivitet {
@@ -225,6 +230,7 @@ button:hover {
     margin-top: 2rem;
     margin: 0 auto;
 }
+
 
 .billeder {
     opacity: 1;
@@ -255,8 +261,8 @@ article {
 @media (min-width:600px) {
 
     .velkommentekst {
-        line-height: 4vw;
-        padding: 2vw;
+        line-height: 3vw;
+        padding: 5vw;
     }
 
     nav h3 {
@@ -268,10 +274,12 @@ article {
 /*************** DESKTOP *************/
 @media (min-width:1000px) {
     .velkommentekst {
-        line-height: 3vw;
+        line-height: 2vw;
         margin-bottom: -4vw;
         padding: 1vw;
-
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 30px;
     }
 
     nav h3 {
@@ -309,7 +317,7 @@ article {
     line-height: 20px;
     padding-bottom: 10px;
     text-decoration: none;
-    font-family: Charter, serif;
+    font-family: Avenir, sans-serif;
 }
 
 .copyright {
@@ -326,6 +334,7 @@ article {
 
 .copyright_container {
     background-color: #253b19;
+
 }
 
 
@@ -345,6 +354,10 @@ article {
         margin-left: 5px;
         margin-right: 5px;
     }
+
+    .velkommentekst_container {
+        padding-bottom: 60px;
+    }
 }
 
 
@@ -355,20 +368,20 @@ article {
     .navbar {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 10px;
-        height: 100px;
+        height: 90px;
         align-items: center;
+        font-family: beloved-sans, sans-serif;
     }
 
     .main-nav {
         display: flex;
-        margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
+        margin-right: 40px;
     }
 
     .main-nav li {
-        margin: 0;
+        margin: 20px;
     }
 
     .nav-links {
@@ -385,6 +398,6 @@ article {
 
     .logo:hover,
     .nav-links:hover {
-        color: aliceblue;
+        color: #82976f;
     }
 }
