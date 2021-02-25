@@ -23,6 +23,7 @@
     padding-top: 40Spx;
     /*    margin-bottom: 60px;*/
     font-family: beloved-sans, sans-serif;
+    margin-top: 40px;
 }
 
 /*
@@ -114,6 +115,7 @@ textarea.kontakt-form-tekst {
 .main-nav li {
     text-align: center;
     margin: 15px auto;
+    font-weight: 100;
 }
 
 .navbar-toggle {
