@@ -169,8 +169,7 @@ iframe {
 
 .navbar {
     font-size: 18px;
-    background-image: white;
-    border: 1px solid rgba (0, 0, 0, 0.2);
+    background-color: white;
     padding-bottom: 10px;
     font-family: Avenir, sans-serif;
 }
@@ -362,7 +361,7 @@ article {
         padding-left: 10%;
         padding-right: 10%;
         padding-bottom: 30px;
-        font-size: 1.rem;
+        font-size: 1rem;
         margin-top: 1vw;
     }
 

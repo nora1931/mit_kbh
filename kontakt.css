@@ -20,7 +20,6 @@
     filter: none;
     width: 100%;
     /*    background-color: #82976f;*/
-    padding-top: 40Spx;
     /*    margin-bottom: 60px;*/
     font-family: beloved-sans, sans-serif;
     margin-top: 40px;
@@ -86,13 +85,12 @@ textarea.kontakt-form-tekst {
 }
 
 
-
 /********* NAV BAR MOBIL *********/
 
 .navbar {
     font-size: 18px;
-    background-image: white;
-    border: 1px solid rgba (0, 0, 0, 0.2);
+    background-color: white;
+    padding-bottom: 10px;
     font-family: Avenir, sans-serif;
 }
 
@@ -115,7 +113,6 @@ textarea.kontakt-form-tekst {
 .main-nav li {
     text-align: center;
     margin: 15px auto;
-    font-weight: 100;
 }
 
 .navbar-toggle {
@@ -154,7 +151,7 @@ textarea.kontakt-form-tekst {
     line-height: 20px;
     padding-bottom: 10px;
     text-decoration: none;
-    font-family: font-family: Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
 }
 
 .copyright {
