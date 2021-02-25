@@ -108,6 +108,7 @@ textarea.kontakt-form-tekst {
 .logo {
     text-decoration: none;
     color: black;
+    font-weight: 100;
 }
 
 .main-nav li {

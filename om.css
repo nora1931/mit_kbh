@@ -139,6 +139,7 @@ h1 {
 .logo {
     text-decoration: none;
     color: black;
+    font-weight: 100;
 }
 
 .main-nav li {
