@@ -4,30 +4,13 @@
     margin: 0;
 }
 
-/****Billede i mobil*****/
-.splashimage_container {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    background-image: url(img/koebenhavnsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 3vw;
-    margin-top: -33vw;
-    background-position: 55%;
-}
-
-.logo img {
-    width: 40%;
-}
-
 .border {
 
     width: 475px;
     height: 4.5px;
     background: #e7b560;
     margin: 40px auto;
-    margin-top: -vw;
+    margin-top: -4vw;
     border-radius: 1vw;
 
 }
@@ -199,10 +182,16 @@ body {
     font-family: 'Josefine Sans', sans-serif;
 }
 
-.splashimage {
+.splashimage_container {
     height: 70vh;
     width: 100%;
     object-fit: cover;
+}
+
+.splash {
+    object-fit: cover;
+    height: 70vh;
+    width: 100%;
 }
 
 /********* NAV BAR MOBIL *********/
@@ -228,7 +217,7 @@ body {
 .nav-links,
 .log {
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: bolder;
     font-family: Avenir, thin;
 }
@@ -400,16 +389,14 @@ article {
         margin-bottom: 0vw;
     }
 
-    .splashimage_container {
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        background-image: url(img/koebenhavnsplash.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-bottom: 3vw;
-        margin-top: -15vw;
+    .velkommenh1_container .velkommenh1 {
+        margin-top: -5vw;
     }
+
+    .border {
+        margin-top: -2.5vw;
+    }
+
 }
 
 /*************** DESKTOP *************/
@@ -444,7 +431,7 @@ article {
     }
 
     .velkommenh1_container .velkommenh1 {
-        margin-top: -6vw;
+        margin-top: -3vw;
 
         font-size: 3rem;
     }
@@ -549,16 +536,12 @@ article {
     .nav-links,
     .log {
         text-decoration: none;
-        color: white;
+        color: black;
         font-weight: bolder;
         font-family: Avenir;
     }
 
-    .logo img {
-        margin-top: 3.5vw;
-        margin-left: -10vw;
 
-    }
 
     .navbar-toggle {
         display: none;
