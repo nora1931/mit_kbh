@@ -190,7 +190,7 @@ iframe {
     background-image: white;
     border: 1px solid rgba (0, 0, 0, 0.2);
     padding-bottom: 10px;
-    font-family: beloved-sans, sans-serif;
+    font-family: Avenir, sans-serif;
 }
 
 /*skjul menu*/
@@ -328,6 +328,7 @@ button:hover {
     backface-visibility: hidden;
 
 }
+
 .container:hover .billeder {
     opacity: 0.3;
     transform: scale(1.1);
@@ -485,7 +486,7 @@ article {
         padding-bottom: 10px;
         height: 100px;
         align-items: center;
-        font-family: beloved-sans, sans-serif;
+        font-family: Avenir, sans-serif;
     }
 
     .main-nav {

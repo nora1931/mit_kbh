@@ -91,8 +91,7 @@ textarea.kontakt-form-tekst {
     font-size: 18px;
     background-image: white;
     border: 1px solid rgba (0, 0, 0, 0.2);
-    padding-bottom: 10px;
-    font-family: beloved-sans, sans-serif;
+    font-family: Avenir, sans-serif;
 }
 
 /*skjul menu*/
@@ -204,7 +203,7 @@ textarea.kontakt-form-tekst {
         padding-bottom: 10px;
         height: 100px;
         align-items: center;
-        font-family: beloved-sans, sans-serif;
+        font-family: Avenir, sans-serif;
         border: 5px;
         margin: 0.5rem;
     }
