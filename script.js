@@ -18,6 +18,7 @@ const myHeaders = {
 
     "x-apikey": "602f8cd45ad3610fb5bb63c8"
 }
+
 document.addEventListener("DOMContentLoaded", start)
 let aktiviteter;
 //Jeg laver en variabel "filter"
@@ -34,10 +35,10 @@ function start() {
 //Eventlistner knyttet til knapperne der vælger hvad for et filter der er aktivt
 function filtrerAktiviter() {
     console.log("filtrerAktiviter");
-    filter = this.dataset.aktivitet; //Sæt verdien "filter" til værdien af data-troende på den knap der er klikket på
+    filter = this.dataset.aktivitet; //Sæt verdien "filter" til værdien af data-aktiviteter på den knap der er klikket på
     document.querySelector(".valgt").classList.remove("valgt"); //fjern klassen valgt fra den knap
     this.classList.add("valgt") //marker den knap, der er klikket på
-    visAktiviteter(); //kald funktionen visPersoner efter det nye filter er sat
+    visAktiviteter(); //kald funktionen visAktiviteter efter det nye filter er sat
     header.textContent = this.textContent;
 }
 
@@ -51,10 +52,10 @@ async function loadJSON() {
     visAktiviteter();
 }
 
-//funktion der viser personer i liste view
+//funktion der viser aktiviteter i liste view
 function visAktiviteter() {
     console.log(aktiviteter)
-    const dest = document.querySelector("#liste"); // container til articles med en person
+    const dest = document.querySelector("#liste"); // container til articles med en aktivitet
     const skabelon = document.querySelector("template").content; // select indhold af html skabelon (article)
     dest.textContent = ""; //ryd container inden nyt loop
     aktiviteter.forEach(aktivitet => {
@@ -69,7 +70,7 @@ function visAktiviteter() {
             //                    klon.querySelector(".aktivitet").addEventListener("click", () => visDetaljer(aktivitet));
             klon.querySelector(".aktivitet").addEventListener("click", () => {
                 popup_vindue(aktivitet);
-            })
+            }) //tilføjer en click eventlistener på class'en aktivitet, som går til funktionen popup_vindue
 
             dest.appendChild(klon);
         }
@@ -78,6 +79,7 @@ function visAktiviteter() {
 
 }
 
+//i denne funktion henter vi indhold til pop up'en og fjerner class'en hide, så pop up'en bliver synlig når der trykkes på den.
 function popup_vindue(indhold) {
     document.querySelector(".pop_up").classList.remove("hide");
     document.querySelector("[popup_langbeskrivelse]").textContent = indhold.langtekst;
@@ -96,14 +98,9 @@ function popup_vindue(indhold) {
     console.log("test3", indhold.langtekst);
 }
 
+// i forrige funktion tilføjede vi en eventlistener click på class'en tilbage, derefter har vi henvist til funktionen fjernPOPUP, hvor vi tilføjer class'en hide og fjerne pop up'en når der klikkes på vores tilbage knap.
 function fjernPOPUP() {
     console.log("fjern pop up");
     document.querySelector(".pop_up").classList.add("hide");
 
 }
-
-
-
-//        function visDetaljer(hvad) {
-//            location.href = `detaljer.html?id=${hvad._id}`;
-//        }
