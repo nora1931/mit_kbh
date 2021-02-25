@@ -20,8 +20,8 @@
     filter: none;
     width: 100%;
     /*    background-color: #82976f;*/
-    padding-top: 30px;
-    margin-bottom: 60px;
+    padding-top: 40Spx;
+    /*    margin-bottom: 60px;*/
     font-family: beloved-sans, sans-serif;
 }
 
@@ -33,10 +33,11 @@
 */
 
 .border {
-    width: 100px;
-    height: 4px;
-    background: black;
+    width: 400px;
+    height: 5px;
+    background: #F3A968;
     margin: 40px auto;
+    border-radius: 1vw;
 }
 
 .kontakt-form {
@@ -225,6 +226,7 @@ textarea.kontakt-form-tekst {
 
     .logo {
         margin-top: 20px;
+        margin-left: 20px;
     }
 
     .navbar-toggle {
