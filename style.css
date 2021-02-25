@@ -22,7 +22,7 @@ main {
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
-    background-color: #d0a886;
+    background-color: #e7b560;
     padding: 10px 10px;
     z-index: 99;
     overflow: scroll;
@@ -40,6 +40,12 @@ main {
     color: white;
 }
 
+.popup_tekst h3 {
+    font-family: beloved-sans, sans-serif;
+    color: white;
+    padding-top: 25px
+}
+
 .popup_content p {
     line-height: 150%;
     padding-top: 1px;
@@ -51,7 +57,7 @@ main {
 
 .tilbage {
     font-size: 2em;
-    color: #574e32;
+    color: #253b19;
     float: right;
     margin-right: 5px;
     cursor: pointer;
@@ -66,6 +72,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     margin-top: 35px;
+    border: 2px solid white;
 
 }
 
@@ -76,24 +83,38 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid white;
 }
 
 
 
 .popupikon {
-    padding-top: 20px;
     width: 100px;
+    position: absolute;
+    bottom: -86%;
+    padding-bottom: 10px;
+
 }
 
-@media (min-width:700px) {
+@media (min-width:850px) {
     .grid_container {
         display: grid;
         grid-template-columns: 1fr 2fr;
+        grid-gap: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .popup_tekst h3 {
+        font-family: beloved-sans, sans-serif;
+        color: white;
+        padding-top: 150px
     }
 
     .popupikon {
         position: static;
-        width: 100%;
+        width: 80%;
     }
 
     img {
@@ -101,7 +122,8 @@ iframe {
     }
 
     .pop_up {
-        /*        height: 70%;*/
+        height: 95%;
+        width: 90%;
     }
 
     iframe {
@@ -111,6 +133,10 @@ iframe {
 
     .kryds_container {
         text-align: end;
+    }
+
+    .tilbage {
+        margin-top: 0px
     }
 
 }
