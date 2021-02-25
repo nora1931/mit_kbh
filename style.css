@@ -21,7 +21,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 98%;
+    height: 90%;
     background-color: #d0a886;
     padding: 10px 10px;
     z-index: 99;
@@ -29,12 +29,10 @@ main {
 }
 
 .popup_tekst {
-    margin: 0px 45px 0px 45px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 20px 70px 0 -165px;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
 }
 
 .popup_content h2 {
@@ -57,7 +55,7 @@ main {
     float: right;
     margin-right: 5px;
     cursor: pointer;
-    margin-top: -7vh;
+    margin-top: -35px
 }
 
 .single_img {
@@ -65,9 +63,10 @@ main {
     width: 330px;
     height: 330px;
     display: block;
-    margin-left: auto;
     margin-right: auto;
-    margin-top: 50px
+    margin-left: auto;
+    margin-top: 35px;
+
 }
 
 
@@ -77,17 +76,46 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 275px;
 }
+
 
 
 .popupikon {
-    width: 85px;
-    position: absolute;
-    bottom: -370px;
-    left: 6px;
+    padding-top: 20px;
+    width: 100px;
 }
 
+@media (min-width:700px) {
+    .grid_container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .popupikon {
+        position: static;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .pop_up {
+        /*        height: 70%;*/
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .kryds_container {
+        text-align: end;
+    }
+
+}
+
+/*
 @media (min-width:700px) {
     .single_img {
         object-fit: cover;
@@ -110,10 +138,10 @@ iframe {
         padding-bottom: 75%;
         position: relative;
         height: 0;
-        /*
+
         bottom: 0px;
         right: 35px;
-*/
+
     }
 
     iframe {
@@ -159,6 +187,7 @@ iframe {
         overflow: scroll;
     }
 }
+*/
 
 /*_____________________________*/
 
