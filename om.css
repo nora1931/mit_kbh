@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-.logo img {
-    width: 40%;
-}
 
 article {
     display: grid;
@@ -120,13 +117,13 @@ h1 {
 }
 
 /********* NAV BAR MOBIL *********/
+
 .navbar {
     font-size: 18px;
     background-image: white;
     border: 1px solid rgba (0, 0, 0, 0.2);
     padding-bottom: 10px;
-    font-family: Avenir, thin;
-
+    font-family: beloved-sans, sans-serif;
 }
 
 /*skjul menu*/
@@ -140,23 +137,14 @@ h1 {
 }
 
 .nav-links,
-.log {
+.logo {
     text-decoration: none;
     color: black;
-    /*font-weight: bolder;*/
-    font-family: Avenir, thin;
 }
 
 .main-nav li {
     text-align: center;
     margin: 15px auto;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
 }
 
 .navbar-toggle {
@@ -167,6 +155,7 @@ h1 {
     color: black;
     font-size: 24px;
 }
+
 
 /******** FOOTER *********/
 
@@ -236,41 +225,36 @@ h1 {
     }
 }
 
-
-
-/********* NAV BAR DEKSTOP *********/
-
 @media screen and (min-width: 768px) {
 
     .navbar {
         display: flex;
         justify-content: space-between;
-        height: 90px;
+        padding-bottom: 10px;
+        height: 100px;
         align-items: center;
         font-family: beloved-sans, sans-serif;
+        border: 5px;
+        margin: 0.5rem;
     }
 
     .main-nav {
         display: flex;
+        margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
-        margin-right: 40px;
     }
 
     .main-nav li {
-        margin: 20px;
+        margin: 0;
     }
 
     .nav-links {
-        margin-left: 40px;
+        margin-left: 60px;
     }
 
     .logo {
         margin-top: 20px;
-    }
-
-    .logo img {
-        margin-top: 3.5vw;
     }
 
     .navbar-toggle {
